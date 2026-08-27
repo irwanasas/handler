@@ -8,6 +8,7 @@ import { CheckerCard } from "@/components/playground/checker-card"
 import { StatsRow } from "@/components/playground/stats-row"
 import { ResultsCard } from "@/components/playground/results-card"
 import { Notices } from "@/components/playground/notices"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function Page() {
   return (
@@ -25,9 +26,11 @@ export default function Page() {
           <div className="mx-auto mb-4 grid size-14 place-items-center rounded-2xl bg-gradient-to-br from-brand to-accent2 text-brand-foreground shadow-lg shadow-brand/25">
             <AtSign className="size-7" />
           </div>
+
           <h1 className="text-4xl font-black tracking-tight text-balance sm:text-5xl">
             Find your next <span className="text-brand">Instagram handle</span>
           </h1>
+
           <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground text-pretty">
             Generate smart ideas, score their quality, shortlist the best, and run a friendly demo
             availability check — all in one playful workspace.
@@ -48,6 +51,7 @@ export default function Page() {
           simulation and never contacts Instagram.
         </footer>
       </main>
+
       <Notices />
     </StudioProvider>
   )
